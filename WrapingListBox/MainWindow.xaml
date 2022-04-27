@@ -1,0 +1,61 @@
+﻿<Window
+	xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+	xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+	x:Class="WrapingListBox.MainWindow"
+	x:Name="Window"
+	Title="MainWindow"
+	Width="640" Height="480">
+    <Window.Resources>
+        <ItemsPanelTemplate x:Key="ListBoxItemsPanel1">
+            <StackPanel/>
+        </ItemsPanelTemplate>
+        <ItemsPanelTemplate x:Key="ListBoxItemsPanel2">
+            <WrapPanel/>
+        </ItemsPanelTemplate>
+    </Window.Resources>
+
+    <Grid x:Name="LayoutRoot">
+        <ListBox ItemsPanel="{DynamicResource ListBoxItemsPanel2}" Margin="42,62,268,62" Background="{x:Null}" ScrollViewer.VerticalScrollBarVisibility="Auto" VerticalContentAlignment="Center" FlowDirection="LeftToRight" ScrollViewer.HorizontalScrollBarVisibility="Disabled">
+            <Rectangle Fill="#FF003E4B" RadiusX="4.5" RadiusY="4.5" Margin="5" Width="100" Height="100">
+                <Rectangle.Effect>
+                    <DropShadowEffect Direction="0" ShadowDepth="0"/>
+                </Rectangle.Effect>
+            </Rectangle>
+            <Rectangle Fill="#FF00232A" RadiusX="4.5" RadiusY="4.5" Width="100" Height="100">
+                <Rectangle.Effect>
+                    <DropShadowEffect Direction="0" ShadowDepth="0"/>
+                </Rectangle.Effect>
+            </Rectangle>
+            <Rectangle Fill="#FF000E11" RadiusX="4.5" RadiusY="4.5" Width="100" Height="100">
+                <Rectangle.Effect>
+                    <DropShadowEffect Direction="0" ShadowDepth="0"/>
+                </Rectangle.Effect>
+            </Rectangle>
+            <Rectangle Fill="#FF006D83" RadiusX="4.5" RadiusY="4.5" Width="100" Height="100">
+                <Rectangle.Effect>
+                    <DropShadowEffect Direction="0" ShadowDepth="0"/>
+                </Rectangle.Effect>
+            </Rectangle>
+            <Rectangle Fill="#FF007B95" RadiusX="4.5" RadiusY="4.5" Width="100" Height="100">
+                <Rectangle.Effect>
+                    <DropShadowEffect Direction="0" ShadowDepth="0"/>
+                </Rectangle.Effect>
+            </Rectangle>
+            <Rectangle Fill="#FF049AB9" RadiusX="4.5" RadiusY="4.5" Width="100" Height="100">
+                <Rectangle.Effect>
+                    <DropShadowEffect Direction="0" ShadowDepth="0"/>
+                </Rectangle.Effect>
+            </Rectangle>
+            <Rectangle Fill="#FF4DCAE5" RadiusX="4.5" RadiusY="4.5" Width="100" Height="100">
+                <Rectangle.Effect>
+                    <DropShadowEffect Direction="0" ShadowDepth="0"/>
+                </Rectangle.Effect>
+            </Rectangle>
+            <Rectangle Fill="#FF84EAFF" RadiusX="4.5" RadiusY="4.5" Width="100" Height="100">
+                <Rectangle.Effect>
+                    <DropShadowEffect Direction="0" ShadowDepth="0"/>
+                </Rectangle.Effect>
+            </Rectangle>
+        </ListBox>
+    </Grid>
+</Window>
